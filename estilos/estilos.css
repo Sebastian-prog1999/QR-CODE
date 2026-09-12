@@ -1,0 +1,94 @@
+/* ===================================================
+   VARIABLES DE COLOR Y TIPOGRAFÍA OFICIALES
+=================================================== */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --font-family: 'Outfit', sans-serif;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===================================================
+   CENTRADO EN PANTALLA (LAYOUT GLOBAL)
+=================================================== */
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* ===================================================
+   TARJETA DEL CÓDIGO QR
+=================================================== */
+.card-container {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 320px;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Imagen del QR */
+.card-qr {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Contenedor de textos */
+.card-content {
+  padding: 1.5rem 0.8rem 1.2rem;
+}
+
+/* Título */
+.card-title {
+  color: var(--dark-blue);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.28;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulo / Párrafo */
+.card-description {
+  color: var(--grayish-blue);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+}
+
+/* ===================================================
+   FOOTER / ATRIBUCIÓN
+=================================================== */
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--grayish-blue);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
